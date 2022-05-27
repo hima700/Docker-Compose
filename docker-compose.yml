@@ -1,0 +1,10 @@
+services:
+  web-server:
+   image: nginx
+   ports:
+      - 8000:80
+
+  app-server:
+    image: tomcat:9.0.12
+    ports:
+      - "8888:8080"
