@@ -1,58 +1,107 @@
-!DOCTYPE html
-html
-head
-titlePage Titletitle
-head
-body
-header
-    h1Getting to know Ibrahim Matarh1
-    h2Getting to know Ibrahim Matarh2
-    h3Getting to know Ibrahim Matarh3
-    h4Getting to know Ibrahim Matarh4
-    h5Getting to know Ibrahim Matarh5
-    h6Getting to know Ibrahim Matarh6
-header
-footer
-    p id=IntroMy name is Ibrahim but you can call me Ibra. I'm an Egyptian who has been living in the USA for more than 7 years now. My favorite place to go to relax and enjoy my day off is the beach.p
-    pMy favorite color is span style=colorbluebluespanp
-nav
-    p id=QuoteA quote from one of my favorite shows (The Office)p   
-    img src=httpbjbproperties.comblogimagessub-buzz-9756-1483552938-1.jpg alt=A quote from one of my favorite shows(The Office)
-    bra href=httpsgithub.comhima700Link to my Githuba 
-nav
-footer
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+  .Try_font {
+      font-family: sans-serif;
+  }
 
-div class=Lists
-    pList of my favorite tv showsp
-ol
-    liThe officeli
-    liHow I met your motherli
-    liSherlockli
-ol
+  #Quote {
+  background-color: rgb(0, 140, 255);
+}
 
-    pList of my favorite foodp
-ul
-    liPizzali
-    liBurgerli
-    liIce creamli
-  ul
-div
+header {
+  background-color: rgb(0, 140, 255);
+}
+a[target= "W3School"] {
+  background-color: rgb(0, 140, 255);
+}
+a[target=_blank] {
+  background-color: rgb(0, 140, 255);
+}
+div[class="Lists"] {
+  background-color: yellow;
+}
+div > table {
+  background-color: rgb(0, 140, 255);
+}
+h2, h3 {
+  background-color: yellow;
+}
+body {
+ background-image: url("paper.gif");
+ background-color: #c5bebe;
+}
 
-    h2Table demonstrating what I did the past couple of daysh2
-table
-  tr
-    thDayth
-    thFinished workth
-  tr
-  tr
-    tdWednesdaytd
-    td style=padding25pxFinished setting up my environment and finished the Git exercisestd
-  tr
-  tr
-    tdThursdaytd
-    td style=padding25pxFinished the docker exercises and working on the HTML exercisestd
-  tr
-table
+div[class="Lists"]{
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid rgb(0, 140, 255);
+  padding: 30px;
+  margin: 20px;
+}
+th, td{ color: yellow;}
+</style>
+</head>
+<body>
+<header>
+    <h1>Getting to know Ibrahim Matar</h1>
+    <h2>Getting to know Ibrahim Matar</h2>
+    <h3>Getting to know Ibrahim Matar</h3>
+    <h4>Getting to know Ibrahim Matar</h4>
+    <h5>Getting to know Ibrahim Matar</h5>
+    <h6>Getting to know Ibrahim Matar</h6>
+</header>
+<footer>
+    <p id="Intro">My name is Ibrahim but you can call me Ibra. I'm an Egyptian who has been living in the USA for more than 7 years now. My favorite place to go to relax and enjoy my day off is the beach.</p>
+    <script>
+       var el = document.getElementById("Intro");
+       el.classList.add("Try_font");
+    </script> 
+    <p>My favorite color is <span style="color:blue">blue</span></p>
+<nav>
+    <p id="Quote">A quote from one of my favorite shows (The Office)</p>   
+    <img src="http://bjbproperties.com/blog/images/sub-buzz-9756-1483552938-1.jpg" alt="A quote from one of my favorite shows(The Office)">
+    <br><a href="https://github.com/hima700"target="_blank">Link to my Github</a> 
+    <a href="https://www.w3schools.com/" target="W3School">Visit W3Schools!</a>
+  
+  </nav>
+</footer>
 
-body
-html
+<div class="Lists">
+    <p>List of my favorite tv shows</p>
+<ol>
+    <li>The office</li>
+    <li>How I met your mother</li>
+    <li>Sherlock</li>
+</ol>
+
+    <p>List of my favorite food</p>
+<ul>
+    <li>Pizza</li>
+    <li>Burger</li>
+    <li>Ice cream</li>
+  </ul>
+</div>
+
+<div class="Table">
+    <h2>Table demonstrating what I did the past couple of days</h2>
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Finished work</th>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td style="padding:25px">Finished setting up my environment and finished the Git exercises</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td style="padding:25px">Finished the docker exercises and working on the HTML exercises</td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>
