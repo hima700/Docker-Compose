@@ -1,8 +1,14 @@
+<utils class="js"></utils>
 <!DOCTYPE html>
 <html>
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <title>Hima's HTML page</title>
 <style>
   .Try_font {
@@ -10,17 +16,17 @@
   }
 
   #Quote {
-  background-color: rgb(0, 140, 255);
+  background-color:yellow;
 }
 
 header {
   background-color: rgb(0, 140, 255);
 }
 a[target= "W3School"] {
-  background-color: rgb(0, 140, 255);
+  background-color: yellow;
 }
 a[target=_blank] {
-  background-color: rgb(0, 140, 255);
+  background-color: yellow;
 }
 div[class="Lists"] {
   background-color: yellow;
@@ -44,11 +50,28 @@ div[class="Lists"]{
   margin: 20px;
 }
 th, td{ color: yellow;}
+
+
 </style>
 </head>
 
 <body>
-  
+  <nav class="navbar navbar-light bg-light">
+    <p class="navbar-brand">Navbar</p>
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search"  style ="position:absolute; top:10px;" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style ="position:absolute; right:1150px; top:10px;"><span class="border border-primary"></span>Search</button>
+    </form>
+  </nav>
+
+  <div class="container">
+    <div class="alert alert-info">
+      <strong>Check my HTML page!</strong>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
 <header>
     <h1>Getting to know Ibrahim Matar</h1>
     <h2>Getting to know Ibrahim Matar</h2>
@@ -92,25 +115,33 @@ th, td{ color: yellow;}
   </ul>
 </div>
 
-<div class="Table">
-    <h2>Table demonstrating what I did the past couple of days</h2>
+
+<div  class="Table">
 <table>
-  <tr>
-    <th>Day</th>
-    <th>Finished work</th>
-  </tr>
-  <tr>
-    <td>Wednesday</td>
-    <td style="padding:25px">Finished setting up my environment and finished the Git exercises</td>
-  </tr>
-  <tr>
-    <td>Thursday</td>
-    <td style="padding:25px">Finished the docker exercises and working on the HTML exercises</td>
-  </tr>
+  <thead>
+    <tr>
+      <th scope="col">Day</th>
+      <th scope="col">Work</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td style="padding:25px">Finished setting up my environment</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td style="padding:25px">Finished the docker exercises</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td style="padding:25px">Finished the html,css and javascript exercises</td>
+    </tr>
+  </tbody>
 </table>
 </div>
 
-<!-- <script src = "script.js"></script> -->
+
 <script>
 $(document).ready(function(){
   $("#Intro").css("background-color", "white");
