@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<title>Hima's HTML page</title>
 <style>
   .Try_font {
       font-family: sans-serif;
@@ -44,7 +46,9 @@ div[class="Lists"]{
 th, td{ color: yellow;}
 </style>
 </head>
+
 <body>
+  
 <header>
     <h1>Getting to know Ibrahim Matar</h1>
     <h2>Getting to know Ibrahim Matar</h2>
@@ -53,6 +57,9 @@ th, td{ color: yellow;}
     <h5>Getting to know Ibrahim Matar</h5>
     <h6>Getting to know Ibrahim Matar</h6>
 </header>
+
+<button class="btn1">Hide Hedears</button>
+<button class="btn2">Show Hedears</button>
 <footer>
     <p id="Intro">My name is Ibrahim but you can call me Ibra. I'm an Egyptian who has been living in the USA for more than 7 years now. My favorite place to go to relax and enjoy my day off is the beach.</p>
     <script>
@@ -64,7 +71,7 @@ th, td{ color: yellow;}
     <p id="Quote">A quote from one of my favorite shows (The Office)</p>   
     <img src="http://bjbproperties.com/blog/images/sub-buzz-9756-1483552938-1.jpg" alt="A quote from one of my favorite shows(The Office)">
     <br><a href="https://github.com/hima700"target="_blank">Link to my Github</a> 
-    <a href="https://www.w3schools.com/" target="W3School">Visit W3Schools!</a>
+    <br><a href="https://www.w3schools.com/" target="W3School">Visit W3Schools!</a>
   
   </nav>
 </footer>
@@ -102,6 +109,30 @@ th, td{ color: yellow;}
   </tr>
 </table>
 </div>
+
+<!-- <script src = "script.js"></script> -->
+<script>
+$(document).ready(function(){
+  $("#Intro").css("background-color", "white");
+
+  $("a").click(function(){
+    alert("You will be directed to the Link");
+  });
+
+  $(document).ready(function(){
+  $(".btn1").click(function(){
+    $("header").hide();
+  });
+  $(".btn2").click(function(){
+    $("header").show();
+  });
+});
+
+});
+
+
+</script>
+
 
 </body>
 </html>
